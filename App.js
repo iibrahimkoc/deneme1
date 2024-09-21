@@ -9,6 +9,7 @@ import LoginScreen from './src/screens/LoginScreen';
 import ForgotPasswordScreen from './src/screens/ForgotPasswordScreen';
 import SignupScreen from './src/screens/SignupScreen';
 import AIsScreen from './src/screens/AIsScreen';
+import NotificationScreen from './src/screens/NotificationScreen';
 import ProfileScreen from './src/screens/ProfileScreen';
 import MessageHistoryScreen from './src/screens/MessageHistoryScreen';
 import TalkScreen from './src/screens/TalkScreen';
@@ -107,6 +108,7 @@ const App = () => {
         <Stack.Screen name="SignupScreen" component={SignupScreen} />
         <Stack.Screen name="AIsScreen" component={AIsScreen} options={{ gestureEnabled: false }} />
         {/*gestureEnabled ile geri gitmeyi engelledik*/}
+        <Stack.Screen name="NotificationScreen" component={NotificationScreen} />
         <Stack.Screen name="ProfileScreen" component={ProfileScreen} />
         <Stack.Screen name="TalkScreen" component={TalkScreen} />
         <Stack.Screen name="NewTalkScreen" component={NewTalkScreen} />

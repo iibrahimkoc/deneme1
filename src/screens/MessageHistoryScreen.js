@@ -7,7 +7,7 @@ import {
   Image,
   ScrollView,
   SafeAreaView,
-  useWindowDimensions, RefreshControl,
+  useWindowDimensions, RefreshControl, Alert,
 } from 'react-native';
 
 import {MMKV} from 'react-native-mmkv';

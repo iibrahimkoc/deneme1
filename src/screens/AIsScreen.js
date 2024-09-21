@@ -56,9 +56,7 @@ const AIsScreen = ({ navigation }) => {
       })
       const photoData = await photoResponse.json();
       const photoDataFilter = photoData.filter((item) => item.package_name == "VIP PACKAGE")[0].package_ai_list;
-
       const aiTeamListData = await response.json();
-
       const myData = [];
       aiTeamListData.forEach((item) => {
         const eslesme = photoDataFilter.find((item2) => item2.name === item.ai_name);
@@ -66,7 +64,6 @@ const AIsScreen = ({ navigation }) => {
           myData.push({ ...item, img_uri: eslesme.img_uri });
         }
       });
-      //console.log(aiTeamListData);
       setAiListTeam(myData);
     }
     catch(error) {
